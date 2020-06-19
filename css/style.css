@@ -1,0 +1,213 @@
+body {
+  font-size: 16px;
+  display:flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+@media(min-width: 720px) {
+  body{
+    background-color: #FFF1F1 ;
+  }
+  #container {
+    margin: 2em 2em;
+    background-color: white;
+    box-shadow: 0 0 5px #F1B8C7;
+    min-height: 91.7vh;
+    max-width: 1100px;
+    width: 90%
+  }
+}
+
+#header-big {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 2.5em 4em;
+  margin-right: 5em;
+  margin-bottom: 0em;
+}
+
+@media(max-width: 1020px) {
+  #header-big {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  max-width: 280px;
+  height: auto;
+  width: 100%;
+}
+
+#sections {
+  width: 100%;
+  border-top: 0.1em solid #8D0D25;
+  border-bottom: 0.1em solid #8D0D25;
+  font-size: 18px;
+  padding: 1em 0em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 1em;
+}
+
+#sections a {
+  padding-left: 0.7em;
+  text-decoration: none;
+  color: black;
+}
+
+#sections a:hover {
+  color: #E61C41;
+  cursor: pointer;
+}
+
+section {
+  margin-left: 6.5em;
+  margin-right: 8em;
+}
+
+section h1 {
+  color: #8D0D25;
+  font-size: 22px;
+}
+
+section h2 {
+  color: #2A2A2A;
+  /* color: #8D0D25; */
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.sangria {
+  padding-left: 1.5em;
+}
+#trayectoria .sangria {
+  display:flex;
+  flex-direction: column;
+}
+
+#estudios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group{
+  padding-bottom: 0.8em;
+}
+
+.title-group {
+  font-weight: bold;
+  color: #560513;
+}
+
+.description {
+  display: block;
+  padding-top: 0.25em;
+}
+
+#habilidades {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5em;
+}
+
+.project span {
+  padding-right: 2em;
+}
+
+.project img {
+  height: 45px;
+  width: auto;
+  border-radius: 0.5em;
+}
+.project img:hover {
+  height: 46px;
+  width: auto;
+  box-shadow: 0 0 5px #ddd;
+}
+
+#contacto a {
+  text-decoration: none;
+  color: black;
+}
+
+#contacto a:hover {
+  color: #E61C41;
+  cursor: pointer;
+}
+
+#contacto img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 200em;
+  width: 100%;
+}
+
+#contacto {
+  display: flex;
+  padding-bottom: 3.5em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#contacto span{
+  padding: 0.5em 0em;
+}
+
+#contacto div {
+  padding-left: 2em;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.info {
+  color: #8D0D25;
+}
+
+@media(max-width:976px){
+
+  #contacto div {
+    padding-top: 1em;
+    padding-left: 0;
+  }
+
+  #contacto img {
+    max-width: 250px;
+  }
+}
+@media(min-width: 420px) {
+  #destrezas .sangria {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+  }
+
+  #destrezas h2 {
+    margin-top: 0;
+  }
+
+  .project {
+    display: flex;
+  }
+}
+
+@media(max-width: 719px) {
+  section {
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+
+  .project img {
+    padding-top:0.7em;
+  }
+}

@@ -1,0 +1,219 @@
+body {
+  margin:auto;
+  max-width: 1001px;
+  font-family: sans-serif;
+  width: 90%
+} 
+header {
+  font-size: 11px;
+  background-color: white;
+  top: 0;
+  position: sticky;
+}
+
+#header-grande .titulo {
+  top: 0;
+  position: sticky;
+}
+
+#barra-superior {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fecha img {
+  vertical-align: middle;
+}
+
+#idiomas {
+  text-align: center;
+}
+
+#small-header #barra-inferior{
+  border-top: 0.1rem solid #F0F0F0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 1rem 0.7rem;
+}
+
+#subscribe {
+  color: #f4b901;
+  margin-left: auto;
+  padding-top: 0.1rem;
+}
+
+.titulo {
+  display: grid;
+  grid-template-columns: 50px repeat(3, 1fr);
+}
+
+.log-in {
+  margin-left: auto;
+}
+
+.imagen-titulo {
+  grid-column-start: 3;
+  margin:auto;
+}
+
+.img-desplegable {
+  margin: auto;
+}
+
+#navbar {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 0px 32px;
+  height: 47px;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+}
+
+#links span {
+  padding: 8px 6px;
+}
+
+#noticias {
+  padding: 1rem 0.7rem;
+}
+
+.imagen-noticia {
+  font-weight: bold;
+  font-size: 14px;
+  display:flex;
+}
+.autor {
+  font-size: 11px;
+}
+
+.contenido {
+  font-size: 15px;
+}
+
+.imagen-noticia span {
+  padding: 0.3rem;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+#covid {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  padding: 1rem 0.7rem;
+}
+
+#covid-title{
+  width: 15rem;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 0.2rem #FE4342 solid ;
+}
+
+
+#noticias-covid {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px dotted black;
+  padding: 0.3rem 0rem;
+  overflow-x:auto;
+}
+
+.grupo-covid {
+  display: flex;
+  padding: 0.4rem 0.6rem;
+  border-left: 0.05rem solid #F0F0F0;
+}
+
+#no-border-left {
+  border-left: none;
+  padding-left: 0;
+}
+
+.grupo-covid img{
+  width: 55px;
+  height: 55px;
+}
+
+.info-covid {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 0.1rem 0rem;
+  padding-left: 0.4rem;
+  font-weight: bold;
+}
+
+.no-fijo{
+  font-weight: 0;
+}
+
+@media (min-width: 750px) {
+  section {
+    display: grid;
+    grid-template-columns: 35% 75%;
+  }
+  #sanchez > img{
+    display:none;
+  }
+  #small-header {
+    display:none;
+  }
+  #header-grande {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+  }
+} 
+@media (max-width: 749px) {
+  body {
+    width: 100%;
+  }
+  #header-grande {
+    display:none;
+  }
+  #small-header {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+  }
+} 
+
+@media (max-width: 1000px) {
+  #navbar {
+    height: 64px;
+    overflow-x:scroll;
+  }
+  #img-log-in-big {
+    display: none;
+  }
+  .grupo-covid img{
+    width: 72px;
+    height: 72px;
+  }
+  .no-fijo {
+    display: none;
+  }
+  .grupo-covid {
+    flex-direction: column;
+    padding: 0.4rem 0.5rem;
+  }
+  .grupo-covid span{
+    max-width: 72px;
+  }
+  #noticias-covid {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1001px) {
+  #img-log-in-medio {
+    display:none;
+  }
+}
