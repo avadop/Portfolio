@@ -114,6 +114,10 @@ section h2 {
   grid-template-columns: repeat(2,50%);
 }
 
+#conocimiento-h2{
+  margin-top: 1em;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -130,10 +134,15 @@ section h2 {
   width: auto;
   border-radius: 0.5em;
 }
+
 .project img:hover {
   height: 46px;
   width: auto;
   box-shadow: 0 0 5px #ddd;
+}
+
+#fiktin:hover {
+  box-shadow: 0 0 5px #35afba;
 }
 
 #contacto a {
@@ -146,7 +155,7 @@ section h2 {
   cursor: pointer;
 }
 
-#contacto img {
+#img-contacto{
   max-width: 150px;
   height: auto;
   border-radius: 200em;
@@ -164,7 +173,7 @@ section h2 {
   padding: 0.5em 0em;
 }
 
-#contacto div {
+#datos-contacto {
   padding-left: 2em;
   display:flex;
   flex-direction: column;
@@ -175,9 +184,40 @@ section h2 {
   color: #8D0D25;
 }
 
+#links-contacto {
+  padding-top: 0.4em;
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container-img-link {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-link {
+  margin-right: auto;
+  width: 50px;
+  height: auto;
+  border-radius: 200em;
+}
+
+.img-link:hover {
+  width: 51px;
+}
+
+#github:hover {
+  box-shadow: 0 0 5px #000000;
+}
+
+#linkedin:hover {
+  box-shadow: 0 0 5px #0073b1;
+}
+
 @media(max-width:976px){
 
-  #contacto div {
+  #datos-contacto{
     padding-top: 1em;
     padding-left: 0;
   }
@@ -203,11 +243,15 @@ section h2 {
 
 @media(max-width: 719px) {
   section {
-    margin-left: 1em;
-    margin-right: 2em;
+    margin-left: 0.5em;
+    margin-right: 1.5em;
   }
 
-  .project img {
-    padding-top:0.7em;
+  .sangria {
+    padding-left: 1em;
+  }
+
+  .project div {
+    padding:0.5em 0;
   }
 }
