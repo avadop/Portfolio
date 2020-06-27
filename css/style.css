@@ -86,7 +86,8 @@ section h2 {
 
 #sobre_mi .sangria{
   display: flex;
-  
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 
 #trayectoria .sangria {
@@ -114,21 +115,6 @@ section h2 {
   padding-top: 0.25em;
 }
 
-#habilidades {
-  display: grid;
-  grid-template-columns: repeat(2,50%);
-}
-
-#conocimiento-h2{
-  margin-top: 1em;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 5em;
-}
 
 #contacto a {
   text-decoration: none;

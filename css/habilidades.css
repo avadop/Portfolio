@@ -1,0 +1,32 @@
+
+#habilidades {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+}
+
+#idiomas span{
+  padding: 0.5em 0;
+}
+
+.hability {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.4em;
+}
+
+.hability img {
+  width: auto;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#conocimiento-h2{
+  margin-top: 2.5em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 5em;
+}
