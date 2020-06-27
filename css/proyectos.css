@@ -1,0 +1,56 @@
+#proyectos .sangria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  height: 3em;
+  width: 10em;
+  border-radius: 0.5em;
+  transition: 0.7s;
+  margin: 1em 0;
+}
+.project img {
+  height: 45px;
+  width: auto;
+  border-radius: 0.5em;
+}
+
+.project span {
+  color: black;
+  height: 0em;
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+  transition-delay: 150ms;
+}
+
+.project:hover {
+  height: 11em;
+  box-shadow: 0 0 5px #ddd;
+}
+
+.project a{
+  text-decoration: none;
+  margin:auto;
+  padding: 0 0.7em;
+}
+
+.project:hover span{
+  height: 10em;
+  visibility: visible;
+  opacity: 1;
+}
+
+#fiktin {
+  background-color: #35afba;
+}
+
+#fiktin:hover {
+  box-shadow: 0 0 5px #35afba;
+}
+
+#calculadora {
+  background-color: #fafff9;
+}
