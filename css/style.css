@@ -4,20 +4,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   line-height: 1.4;
+  margin: 0;
 }
 
-@media(min-width: 720px) {
-  body{
-    background-color: #FFF1F1 ;
-  }
-  #container {
-    margin: 2em 2em;
-    background-color: white;
-    box-shadow: 0 0 5px #F1B8C7;
-    min-height: 91.7vh;
-    max-width: 1100px;
-    width: 90%
-  }
+#container {
+  width: 100%;
 }
 
 #header-big {
@@ -27,12 +18,6 @@ body {
   margin: 2.5em 4em;
   margin-right: 5em;
   margin-bottom: 0em;
-}
-
-@media(max-width: 1020px) {
-  #header-big {
-    flex-direction: column;
-  }
 }
 
 .logo {
@@ -68,14 +53,6 @@ article {
   padding-left: 1.5em;
 }
 
-@media(max-width:976px){
-
-  #datos-contacto{
-    padding-top: 1em;
-    padding-left: 0;
-  }
-}
-
 @media(max-width: 719px) {
   section {
     margin-left: 0.5em;
@@ -84,5 +61,25 @@ article {
 
   .sangria {
     padding-left: 1em;
+  }
+}
+
+@media(min-width: 720px) {
+  body{
+    background-color: #FFF1F1 ;
+  }
+  #container {
+    margin: 2em 2em;
+    background-color: white;
+    box-shadow: 0 0 5px #F1B8C7;
+    min-height: 91.7vh;
+    max-width: 1100px;
+    width: 90%
+  }
+}
+
+@media(max-width: 1020px) {
+  #header-big {
+    flex-direction: column;
   }
 }
