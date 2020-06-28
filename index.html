@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      
+
 
     </header>
 
@@ -132,31 +132,56 @@
                 responsive.</span></a>
           </div>
           <div class="project" id="calculadora">
-            <a href="https://avadop.github.io/Calculadora/" target="_blank"><img
-                src="img/calculadora_ranita.PNG"><span>Calculadora básica realizada con HTML, Css y Javascript.</span></a>
+            <a href="https://avadop.github.io/Calculadora/" target="_blank"><img src="img/ranita.PNG"><span>Calculadora
+                básica realizada con HTML, Css y
+                Javascript.</span></a>
           </div>
         </div>
       </article>
 
-      <article>
+      <article id="contacto">
         <h1>Contacto</h1>
         <div class="sangria">
-          <div class="container-img-link">
-            <a href="https://www.linkedin.com/in/andrea-del-vado-puell/" target="_blank"><img class="img-link"
-                id="linkedin" src="img/linkedin.png"></a>
-            <span class="info">Linkedin </span>
+          <div id="contact-form">
+            <div class="campo-formulario">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="message">
+              </input>
+            </div>
+            <div class="campo-formulario">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="message">
+              </input>
+            </div>
+            <div class="campo-formulario">
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="message">
+              </input>
+            </div>
+            <div class="campo-formulario">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="message" rows="6" cols="50"></textarea>
+            </div>
+            <button onclick="enviar()">Enviar</button>
           </div>
-          <div class="container-img-link">
-            <a href="https://github.com/avadop" target="_blank"><img class="img-link" id="github"
-                src="img/iconoGH.jpg"></a>
-            <span class="info">Github </span>
+          <div id="redes-sociales">
+            <div class="container-img-link">
+              <a href="https://www.linkedin.com/in/andrea-del-vado-puell/" target="_blank"><img class="img-link"
+                  id="linkedin" src="img/linkedin.png"></a>
+              <span class="info">Linkedin </span>
+            </div>
+            <div class="container-img-link">
+              <a href="https://github.com/avadop" target="_blank"><img class="img-link" id="github"
+                  src="img/iconoGH.jpg"></a>
+              <span class="info">Github </span>
+            </div>
           </div>
         </div>
       </article>
     </section>
-  <button id="back-to-index"><a href="#container"><img src="img/arrow.png"></a></button>
+    <button id="back-to-index"><a href="#container"><img src="img/arrow.png"></a></button>
   </div>
-  
+
   <script src="js/navbar.js"></script>
 </body>
 
