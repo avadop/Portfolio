@@ -1,12 +1,10 @@
 #contacto .sangria {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-#contact-form {
-  margin-right: 2em;
-}
 
 #contact-form button {
   float: right;
@@ -28,24 +26,43 @@
   flex-direction: column;
 }
 
+input {
+  margin-top: 0.2em;
+  padding: 0.4em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+  outline-color: #E61C41;
+}
+
 textarea {
+  margin-top: 0.2em;
+  padding: 0.4em;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   line-height: 1.4;
-  width: 100%;
+  width: 97%;
 }
+
+textarea:focus {
+  outline-color: #E61C41;
+}
+
 
 #redes-sociales {
   margin: 0em 2em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .container-img-link {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 2em;
 }
 
 .img-link {
@@ -67,19 +84,3 @@ textarea {
   box-shadow: 0 0 5px #0073b1;
 }
 
-@media (max-width: 540px) {
-  #redes-sociales {
-    flex-direction: row;
-    margin: 1em 0em;
-  }
-
-  #contacto .sangria {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .container-img-link {
-    margin-right: 2em;
-  }
-}
