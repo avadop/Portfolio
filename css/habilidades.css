@@ -1,7 +1,7 @@
 
 #habilidades {
   display: grid;
-  grid-template-columns: repeat(2,50%);
+  grid-template-columns: repeat(2,1fr);
 }
 
 #idiomas span{
@@ -11,7 +11,7 @@
 .hability {
   display: flex;
   align-items: center;
-  padding-bottom: 0.4em;
+  padding-bottom: 1.1em;
 }
 
 .hability img {
@@ -28,5 +28,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 5em;
+}
+
+@media(min-width: 420px) {
+  #destrezas .sangria {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: auto;
+  }
+
+  #destrezas h2 {
+    margin-top: 0;
+  }
 }
