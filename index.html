@@ -11,7 +11,7 @@
   <link href="css/sobre-mi.css" type="text/css" rel="stylesheet">
   <link href="css/trayectoria.css" type="text/css" rel="stylesheet">
   <link href="css/contacto.css" type="text/css" rel="stylesheet">
-  <link href="css/navbar.css" type="text/css" rel="stylesheet">
+  <link href="css/header.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +19,19 @@
     <header>
       <div id="header-big">
         <img class="logo" src="img/logo.PNG">
-        <div id="sections">
+        <div class="nav-bar">
+          <a id="first_link" href="#sobre_mi">Sobre mi</a>
+          <a href="#trayectoria">Trayectoria</a>
+          <a href="#destrezas">Destrezas</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </div>
+
+      <div id="header-small">
+        <img class="logo" src="img/logo.PNG">
+        <button onclick="showNavbar()">
+        <div class="nav-bar">
           <a id="first_link" href="#sobre_mi">Sobre mi</a>
           <a href="#trayectoria">Trayectoria</a>
           <a href="#destrezas">Destrezas</a>
@@ -149,6 +161,7 @@
 
     </section>
   </div>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>

@@ -11,21 +11,6 @@ body {
   width: 100%;
 }
 
-#header-big {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  margin: 2.5em 4em;
-  margin-right: 5em;
-  margin-bottom: 0em;
-}
-
-.logo {
-  max-width: 280px;
-  height: auto;
-  width: 100%;
-}
-
 section {
   margin-left: 3.5em;
   margin-right: 5em;
@@ -78,8 +63,3 @@ article {
   }
 }
 
-@media(max-width: 1020px) {
-  #header-big {
-    flex-direction: column;
-  }
-}

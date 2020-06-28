@@ -30,7 +30,7 @@
   justify-content: space-between;
 }
 
-@media(min-width: 420px) {
+@media(min-width: 550px) {
   #destrezas .sangria {
     display: grid;
     grid-template-columns: repeat(2,1fr);

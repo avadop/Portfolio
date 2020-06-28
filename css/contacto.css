@@ -61,3 +61,11 @@
 #linkedin:hover {
   box-shadow: 0 0 5px #0073b1;
 }
+
+@media(max-width:976px){
+
+  #datos-contacto{
+    padding-top: 1em;
+    padding-left: 0;
+  }
+}
