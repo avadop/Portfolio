@@ -6,7 +6,7 @@ function showNavbar(){
   if( slideMenu.className === 'no-show'){
 
      slideMenu.className = 'show';
-     
+
   }
   else slideMenu.className = 'no-show';
 
