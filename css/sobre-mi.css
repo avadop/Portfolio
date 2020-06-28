@@ -3,6 +3,7 @@
 #sobre_mi .sangria{
   display: flex;
   justify-content: space-between;
+  padding-top: 1em;
 }
 
 #sobre_mi p {
