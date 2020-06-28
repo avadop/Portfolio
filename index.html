@@ -20,23 +20,25 @@
       <div id="header-big">
         <img class="logo" src="img/logo.PNG">
         <div class="nav-bar">
-          <a id="first_link" href="#sobre_mi">Sobre mi</a>
-          <a href="#trayectoria">Trayectoria</a>
-          <a href="#destrezas">Destrezas</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+          <a class="nav-bar-links" href="#sobre_mi">Sobre mi</a>
+          <a class="nav-bar-links" href="#trayectoria">Trayectoria</a>
+          <a class="nav-bar-links" href="#destrezas">Destrezas</a>
+          <a class="nav-bar-links" href="#proyectos">Proyectos</a>
+          <a class="nav-bar-links" href="#contacto">Contacto</a>
         </div>
       </div>
 
       <div id="header-small">
         <img class="logo" src="img/logo.PNG">
-        <button onclick="showNavbar()">
-        <div class="nav-bar">
-          <a id="first_link" href="#sobre_mi">Sobre mi</a>
-          <a href="#trayectoria">Trayectoria</a>
-          <a href="#destrezas">Destrezas</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+        <div>
+          <button class="menu-button" onclick="showNavbar()"><img src="img/hamburguesa.jpg"></button>
+          <div id="slide-menu" class="no-show">
+            <a class="nav-bar-links" href="#sobre_mi">Sobre mi</a>
+            <a class="nav-bar-links" href="#trayectoria">Trayectoria</a>
+            <a class="nav-bar-links" href="#destrezas">Destrezas</a>
+            <a class="nav-bar-links" href="#proyectos">Proyectos</a>
+            <a class="nav-bar-links" href="#contacto">Contacto</a>
+          </div>
         </div>
       </div>
     </header>
@@ -137,24 +139,15 @@
       <article>
         <h1>Contacto</h1>
         <div class="sangria">
-          <div id="contacto">
-            <img id="img-contacto" src="img/yo_cuadrada.jpg">
-            <div id="datos-contacto">
-              <span><span class="info">Teléfono: </span> +34 673 000 000</span>
-              <span><span class="info">Correo electrónico: </span>andrea.vado.puell@gmail.com</span>
-              <div id="links-contacto">
-                <div class="container-img-link">
-                  <a href="https://www.linkedin.com/in/andrea-del-vado-puell/" target="_blank"><img class="img-link"
-                      id="linkedin" src="img/linkedin.png"></a>
-                  <span class="info">Linkedin </span>
-                </div>
-                <div class="container-img-link">
-                  <a href="https://github.com/avadop" target="_blank"><img class="img-link" id="github"
-                      src="img/iconoGH.jpg"></a>
-                  <span class="info">Github </span>
-                </div>
-              </div>
-            </div>
+          <div class="container-img-link">
+            <a href="https://www.linkedin.com/in/andrea-del-vado-puell/" target="_blank"><img class="img-link"
+                id="linkedin" src="img/linkedin.png"></a>
+            <span class="info">Linkedin </span>
+          </div>
+          <div class="container-img-link">
+            <a href="https://github.com/avadop" target="_blank"><img class="img-link" id="github"
+                src="img/iconoGH.jpg"></a>
+            <span class="info">Github </span>
           </div>
         </div>
       </article>

@@ -30,15 +30,54 @@
   margin-left: 1em;
 }
 
-.nav-bar a {
+.nav-bar-links {
   padding-left: 0.7em;
   text-decoration: none;
   color: black;
 }
 
-.nav-bar a:hover {
+.nav-bar-links:hover {
   color: #E61C41;
   cursor: pointer;
+}
+
+.menu-button img {
+  width: 80px;
+}
+
+.menu-button {
+  border: none;
+  border-radius: 0.8em;
+  background-color: white;
+  cursor:pointer;
+}
+
+.menu-button:hover img {
+  content:url("../img/hamburguesa_rosa.jpg");
+}
+
+.menu-button:focus {
+  outline: none;
+}
+
+#slide-menu {
+  background-color: #FFF1F1;
+  font-size: 1.4em;
+  width: 10em;
+}
+
+.no-show {
+  display:none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+#slide-menu .nav-bar-links{
+  padding: 0.2em 0.3em;
+  /* border-bottom: 1px solid #8D0D25; */
 }
 
 
@@ -54,6 +93,17 @@
   }
 
   #header-small {
-    display: block;
+    margin: 2.5em 0em;
+    margin-bottom: 0em;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
   }
+}
+
+@media(max-width: 370px) {
+  .logo {
+    max-width: 230px;
+  }
+  
 }
