@@ -1,0 +1,32 @@
+
+
+#sobre_mi .sangria{
+  display: flex;
+  justify-content: space-between;
+}
+
+#sobre_mi p {
+  padding-left: 2em;
+  margin-top:0;
+}
+
+#img-contacto{
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 200em;
+}
+
+@media (max-width: 922px){
+  #img-contacto{
+    max-width: 200px;
+    max-height: 200px;
+    order: 1;
+  }
+  #sobre_mi .sangria{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #sobre_mi p {
+    padding-left: 0em;
+  }
+}
