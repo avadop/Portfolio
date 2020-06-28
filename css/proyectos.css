@@ -5,8 +5,8 @@
 }
 
 .project {
-  height: 3em;
-  width: 10em;
+  height: 2.5em;
+  width: 8.5em;
   border-radius: 0.5em;
   transition: 0.7s;
   margin: 1em 0;
@@ -21,13 +21,14 @@
   color: black;
   height: 0em;
   visibility:hidden;
+  display:block;
   opacity: 0;
-  transition: visibility 0s, opacity 1s linear;
-  transition-delay: 150ms;
+  font-size: 18px;
+  transition: visibility 0.5s, opacity 1s linear;
 }
 
 .project:hover {
-  height: 11em;
+  height: 9.5em;
   box-shadow: 0 0 5px #ddd;
 }
 
@@ -47,10 +48,27 @@
   background-color: #35afba;
 }
 
+#fiktin span {
+  color:white;
+}
+
 #fiktin:hover {
   box-shadow: 0 0 5px #35afba;
 }
 
 #calculadora {
   background-color: #fafff9;
+}
+
+@media(min-width: 420px) {
+  .project {
+    display: flex;
+  }
+}
+
+@media(max-width: 719px) {
+
+  .project div {
+    padding:0.5em 0;
+  }
 }

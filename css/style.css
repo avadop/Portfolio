@@ -3,6 +3,7 @@ body {
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+  line-height: 1.4;
 }
 
 @media(min-width: 720px) {
@@ -40,150 +41,31 @@ body {
   width: 100%;
 }
 
-#sections {
-  width: 100%;
-  border-top: 0.1em solid #8D0D25;
-  border-bottom: 0.1em solid #8D0D25;
-  font-size: 18px;
-  padding: 1em 0em;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-left: 1em;
-}
-
-#sections a {
-  padding-left: 0.7em;
-  text-decoration: none;
-  color: black;
-}
-
-#sections a:hover {
-  color: #E61C41;
-  cursor: pointer;
-}
-
 section {
-  margin-left: 6.5em;
-  margin-right: 8em;
+  margin-left: 3.5em;
+  margin-right: 5em;
 }
 
 section h1 {
   color: #8D0D25;
-  font-size: 22px;
+  margin: 0;
+  font-size: 1.35em;
+  margin-bottom: 0.6em;
 }
 
 section h2 {
   color: #2A2A2A;
-  /* color: #8D0D25; */
-  font-size: 18px;
   margin-top: 0;
+  font-size: 1.2em;
+}
+
+article {
+  padding: 2em 0;
+  font-size: 1.4em;
 }
 
 .sangria {
   padding-left: 1.5em;
-}
-
-#sobre_mi .sangria{
-  display: flex;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
-}
-
-#trayectoria .sangria {
-  display:flex;
-  flex-direction: column;
-}
-
-#estudios {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.group{
-  padding-bottom: 0.8em;
-}
-
-.title-group {
-  font-weight: bold;
-  color: #560513;
-}
-
-.description {
-  display: block;
-  padding-top: 0.25em;
-}
-
-
-#contacto a {
-  text-decoration: none;
-  color: black;
-}
-
-#contacto a:hover {
-  color: #E61C41;
-  cursor: pointer;
-}
-
-#img-contacto{
-  max-width: 150px;
-  height: auto;
-  border-radius: 200em;
-  width: 100%;
-}
-
-#contacto {
-  display: flex;
-  padding-bottom: 3.5em;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#contacto span{
-  padding: 0.5em 0em;
-}
-
-#datos-contacto {
-  padding-left: 2em;
-  display:flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.info {
-  color: #8D0D25;
-}
-
-#links-contacto {
-  padding-top: 0.4em;
-  display:grid;
-  grid-template-columns: 50% 50%;
-}
-
-.container-img-link {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-link {
-  margin-right: auto;
-  width: 50px;
-  height: auto;
-  border-radius: 200em;
-}
-
-.img-link:hover {
-  width: 51px;
-}
-
-#github:hover {
-  box-shadow: 0 0 5px #000000;
-}
-
-#linkedin:hover {
-  box-shadow: 0 0 5px #0073b1;
 }
 
 @media(max-width:976px){
@@ -191,24 +73,6 @@ section h2 {
   #datos-contacto{
     padding-top: 1em;
     padding-left: 0;
-  }
-
-  #contacto img {
-    max-width: 250px;
-  }
-}
-@media(min-width: 420px) {
-  #destrezas .sangria {
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-  }
-
-  #destrezas h2 {
-    margin-top: 0;
-  }
-
-  .project {
-    display: flex;
   }
 }
 
@@ -220,9 +84,5 @@ section h2 {
 
   .sangria {
     padding-left: 1em;
-  }
-
-  .project div {
-    padding:0.5em 0;
   }
 }
