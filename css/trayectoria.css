@@ -1,0 +1,9 @@
+#trayectoria .sangria {
+  display:flex;
+  justify-content: center;
+}
+
+#trayectoria .sangria img {
+  max-width: 100%;
+  height: auto;
+}
